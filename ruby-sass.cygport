@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-sass"
-VERSION=3.2.5
+VERSION=3.2.9
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby CSS compiler extension"
