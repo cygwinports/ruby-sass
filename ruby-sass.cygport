@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-sass"
-VERSION=3.4.25
+VERSION=3.5.6
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby CSS compiler extension"
@@ -13,8 +13,5 @@ web-framework plugin."
 ARCH=noarch
 
 PKG_NAMES="${NAME} ${NAME}-doc"
-ruby_sass_REQUIRES="ruby-listen" # bundled
-ruby_sass_CONTENTS="--exclude=vendor usr/bin/ ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_sass_CONTENTS="usr/bin/ ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
 ruby_sass_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
-# bundled listen extension
-PKG_IGNORE="${RUBYGEM_INSTDIR#/}/vendor/"
